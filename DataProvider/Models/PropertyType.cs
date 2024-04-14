@@ -1,4 +1,4 @@
-namespace SkillAndEntityVerwalter.Models
+namespace DataProvider.Models
 {
     public enum PropertyType
     {

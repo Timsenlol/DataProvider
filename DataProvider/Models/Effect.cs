@@ -1,6 +1,6 @@
 using System;
 
-namespace SkillAndEntityVerwalter.Models
+namespace DataProvider.Models
 {
     public class Effect
     {

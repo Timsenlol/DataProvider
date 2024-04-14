@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using SkillAndEntityVerwalter.Models;
+using DataProvider.Models;
 
-namespace SkillAndEntityVerwalter.Data
+namespace DataProvider.Data
 {
     public interface DataService
     {

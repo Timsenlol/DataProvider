@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using SkillAndEntityVerwalter.Models;
+using DataProvider.Models;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace SkillAndEntityVerwalter.Data
+namespace DataProvider.Data
 {
     public class DataServiceImpl : DataService
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SkillAndEntityVerwalter.Models
+namespace DataProvider.Models
 {
     public class Player : Entity
     {
