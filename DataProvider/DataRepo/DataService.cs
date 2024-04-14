@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DataProvider.Models;
 
-namespace DataProvider.Data
+namespace DataProvider.DataRepo
 {
     public interface DataService
     {

@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace DataProvider.Data
+namespace DataProvider.DataRepo
 {
     public class DataServiceImpl : DataService
     {
