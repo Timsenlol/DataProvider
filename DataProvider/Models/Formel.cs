@@ -14,8 +14,6 @@ namespace DataProvider.Models
                 value += " + (";
                 value += change.ToString() +")";
             }
-
-          
             return value; 
         }
     }

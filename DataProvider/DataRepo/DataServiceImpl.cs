@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using DataProvider.Models;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using Newtonsoft.Json;
+using RoundCombatLib;
 
 namespace DataProvider.DataRepo
 {
@@ -14,33 +16,10 @@ namespace DataProvider.DataRepo
 
         public IList<Skill> GetSkills(string dataSet)
         {
-            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string filePath = Path.Combine(desktopPath, "MetaData", "skills_"+dataSet+".json");
-
-            if (string.IsNullOrEmpty(filePath))
-            {
-                return new List<Skill>();
-            }
-
-            return (File.Exists(filePath)
-                ? JsonConvert.DeserializeObject<IList<Skill>>(Decrypt(File.ReadAllText(filePath), _encryptionKey))
-                : new List<Skill>()) ?? new List<Skill>(); 
+            return new Collection<Skill>();
         }
 
-        public IList<Entity> GetEntities(string dataSet)
-        {
-            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string filePath = Path.Combine(desktopPath, "MetaData", "entities_"+dataSet+".json");
-
-            if (string.IsNullOrEmpty(filePath))
-            {
-                return new List<Entity>();
-            }
-
-            return (File.Exists(filePath)
-                ? JsonConvert.DeserializeObject<IList<Entity>>(Decrypt(File.ReadAllText(filePath), _encryptionKey))
-                : new List<Entity>()) ?? new List<Entity>(); 
-        }
+ 
 
         public void UpdateSkills(IList<Skill> skills, string dataSet)
         {
@@ -56,6 +35,26 @@ namespace DataProvider.DataRepo
             }
 
             File.WriteAllText(Path.Combine(directoryPath, "skills_"+dataSet+".json"), encryptedJson);
+        }
+
+        public MetaData GetMetaData()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateMetaData(MetaData metaData)
+        {
+            throw new NotImplementedException();
+        }
+
+        public RoundCombatData GetRoundCombatData(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void updateRoundCombatData(RoundCombatData roundCombatData)
+        {
+            throw new NotImplementedException();
         }
 
         public void UpdateEnitties(IList<Entity> entities, string dataSet)

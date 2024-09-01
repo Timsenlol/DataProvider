@@ -8,9 +8,9 @@ namespace DataProvider.Models
 
         public override string ToString()
         {
-            return PropertyType + getStringForMathOp(MathOperation) + ChangeValue;
+            return PropertyType + GetStringForMathOp(MathOperation) + ChangeValue;
         }
-        private string getStringForMathOp(MathOperation changeMathOperation)
+        private string GetStringForMathOp(MathOperation changeMathOperation)
         {
             switch (changeMathOperation)
             {

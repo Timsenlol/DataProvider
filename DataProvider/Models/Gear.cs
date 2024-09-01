@@ -11,7 +11,6 @@ namespace DataProvider.Models
         public decimal magicTalent { get; set; }
         public decimal karma { get; set; }
         public decimal faith { get; set; }
-        public PassivEffect PassivEffect { get; set; }
-        
+        public PassivEffect? PassivEffect { get; set; }
     }
 }
