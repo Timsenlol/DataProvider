@@ -2,22 +2,22 @@ namespace DataProvider.Models;
 
 public class MetaData
 {
-    public decimal BaseStrength;
-    public decimal BaseInt;
-    public decimal BaseLuck;
-    public decimal BaseAgi;
-    public decimal BaseMagicDef;
-    public decimal BaseMagicTalent;
-    public decimal BaseDef;
-    public decimal BaseFaith;
-    public decimal BaseKarma;
-    public decimal BaseCritMulti;
-    public decimal BaseDeffUmwandlung;
-    public decimal BaseMagicDefUmwandlung;
-    public decimal BasePysicalSchaden;
-    public decimal PysicalStrengthMuti;
-    public decimal PysicalAgiMuti;
-    public decimal MagicIntMuti;
-    public decimal MagicTalentMuti;
-    public long InitiativPunkte; 
+    public decimal BaseStrength { get; set; }
+    public decimal BaseInt { get; set; }
+    public decimal BaseLuck{ get; set; }
+    public decimal BaseAgi{ get; set; }
+    public decimal BaseMagicDef{ get; set; }
+    public decimal BaseMagicTalent{ get; set; }
+    public decimal BaseDef{ get; set; }
+    public decimal BaseFaith{ get; set; }
+    public decimal BaseKarma{ get; set; }
+    public decimal BaseCritMulti{ get; set; }
+    public decimal BaseDeffUmwandlung{ get; set; }
+    public decimal BaseMagicDefUmwandlung{ get; set; }
+    public decimal BasePysicalSchaden{ get; set; }
+    public decimal PysicalStrengthMuti{ get; set; }
+    public decimal PysicalAgiMuti{ get; set; }
+    public decimal MagicIntMuti{ get; set; }
+    public decimal MagicTalentMuti{ get; set; }
+    public long InitiativPunkte{ get; set; }
 }
