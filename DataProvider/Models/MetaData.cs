@@ -20,4 +20,8 @@ public class MetaData
     public decimal MagicIntMuti{ get; set; }
     public decimal MagicTalentMuti{ get; set; }
     public long InitiativPunkte{ get; set; }
+    public long FirstHitAgiSchwellwert { get; set; }
+    public long FirstHitLuckSchwellwert { get; set; }
+    public decimal MaxFirstHitChangeIncreaseAgi { get; set; }
+    public decimal MaxFirstHitChangeIncreaseLuck { get; set; }
 }
