@@ -18,7 +18,9 @@ namespace RoundCombatLib
         // Variable die sagt, ob der Kampf vorbei ist
         public bool IsCombatOver { get; set; }
         public int AktuelleRunde { get; set; }
-        
+
+        public ZoneEffect ZoneEffect { get; set; }
+
         public RoundCombatData(Player playerOne, Player playerTwo)
         {
             Aktionen = new List<RoundCombatDataLog>(); 
