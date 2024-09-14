@@ -22,6 +22,6 @@ public class MetaData
     public long InitiativPunkte{ get; set; }
     public long FirstHitAgiSchwellwert { get; set; }
     public long FirstHitLuckSchwellwert { get; set; }
-    public decimal MaxFirstHitChangeIncreaseAgi { get; set; }
-    public decimal MaxFirstHitChangeIncreaseLuck { get; set; }
+    public float FirstHitHardCap { get; set; }
+    public float FirstHitSoftCap { get; set; }
 }

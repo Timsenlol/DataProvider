@@ -9,8 +9,6 @@ namespace DataProvider.Models
     public class Entity
     {
         public Guid id { get; set; }
-        // Passive EffektLeiste Player
-        public List <PassivEffect> EffektLeistePlayer { get; set; }
         // Akitve OverTimeEffekte auf Player und Enemy => Buffs/Debuffs
         // Hier wird eine Tuple verwendet Item1 => Effect an sich
         // Item 3 => Runde in der commitet wurde

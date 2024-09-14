@@ -4,5 +4,7 @@ namespace DataProvider.Models
     {
         Direkt,
         Overtime,
+        BUFF,
+        DEBUFF
     }
 }
